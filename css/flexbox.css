@@ -12,6 +12,30 @@
   display: none;
 }
 
+/* SUPERIOR SEÇÃO */
+
+.superior__secao__container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: scroll;
+  gap: 15px;
+}
+
+
+/* VÍDEO */
+
+.videos__container {
+  display: flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.videos__item {
+  height: 303px;
+  width: 280px;
+  flex-grow: 1;
+}
 
 /* MENU LATERAL MOBILE */
 
@@ -25,6 +49,7 @@
 .menu__lista {
   display: flex;
   justify-content: space-around;
+  height: 100%;
 }
 
 .menu__lista li {
@@ -35,7 +60,7 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 15px;
+  padding: 4px;
 }
 
 .menu__lista:nth-child(2),
@@ -43,6 +68,17 @@
 .menu__lista:nth-child(4) {
   display: none;
 }
+
+/* RODAPÉ */
+
+.rodape__container {
+  display: flex;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  flex-flow: column wrap;
+}
+
+
 
 
 /* MENU LATERAL PARA TELAS DE TABLETS */
@@ -52,18 +88,33 @@
   .menu__container {
       left: 0;
       height: auto;
-      width: 74px;
+      width: auto;
       top: 80px;
+      
   }
   
   .menu__lista {
       flex-direction: column;
+      align-items: center;
       justify-content: flex-start;
       padding-top: 15px;
       gap: 33px;
+      
   }
+
+  /* CABEÇALHO */
+  .cabecalho__pesquisar__item {
+    display: block;
+  }
+
+  /* RODAPÉ */
+  .rodape__container {
+    justify-content: space-between;
+  }
+
   
   }
+
 
 
 /* MENU LATERAL DESKTOP */
@@ -112,40 +163,6 @@
 
   .maispagina {
     order: 4;
-  }
-
-
-/* SUPERIOR SEÇÃO */
-
-.superior__secao__container {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  overflow: scroll;
-  gap: 15px;
-}
-
-
-/* RODAPÉ */
-
-.rodape__container {
-  display: flex;
-  /* flex-direction: column;
-  flex-wrap: wrap; */
-  flex-flow: column wrap;
-}
-
-
-@media (min-width: 834px) {
-
-/* CABEÇALHO */
-  .cabecalho__pesquisar__item {
-    display: block;
-  }
-
-  /* RODAPÉ */
-  .rodape__container {
-    justify-content: space-between;
   }
 
 }
